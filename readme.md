@@ -1,5 +1,11 @@
 # yo jekyllrb that works
 
+A bare yo jekyllrb generated app, with small fixes that fixes my current installation.
+
+Main fixes:
+* `Gemfile`: Set each gem on its own line + update jekyll to version 2.5.3
+* Install browsersync: `$ sudo npm install grunt-browser-sync --save-dev`
+
 
 ## Install log
 
