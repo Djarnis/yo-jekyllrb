@@ -3,118 +3,121 @@
 A bare yo jekyllrb generated app, with small fixes that fixes my current installation.
 
 Main fixes:
-* `Gemfile`: Set each gem on its own line + update jekyll to version 2.5.3
-* Install browsersync: `$ sudo npm install grunt-browser-sync --save-dev`
+* `Gemfile`: Set each gem on its own line + update `jekyll` to version `2.5.3`.
+* Update browsersync: `$ sudo npm install grunt-browser-sync --save-dev`
+* `Gruntfile.js`: Replace double quotes to single to make build pass
 
 
 ## Install log
 
+### $ yo jekyllrb
+
 ```
-$ yo jekyllrb
+    $ yo jekyllrb
 
-     _-----_
-    |       |    .------------------------------------------.
-    |--(o)--|    | Update available: 1.5.0 (current: 1.4.6) |
-   `---------´   |     Run npm install -g yo to update.     |
-    ( _´U`_ )    '------------------------------------------'
-    /___A___\    
-     |  ~  |     
-   __'.___.'__   
- ´   `  |° ´ Y ` 
+         _-----_
+        |       |    .------------------------------------------.
+        |--(o)--|    | Update available: 1.5.0 (current: 1.4.6) |
+       `---------´   |     Run npm install -g yo to update.     |
+        ( _´U`_ )    '------------------------------------------'
+        /___A___\    
+         |  ~  |     
+       __'.___.'__   
+     ´   `  |° ´ Y ` 
 
-undefined
-This generator will scaffold and wire a Jekyll site. Yo, Jekyllrb!
+    undefined
+    This generator will scaffold and wire a Jekyll site. Yo, Jekyllrb!
 
-Tell us a little about yourself. ☛
-? Name: Jeppe Bårris
-? Email: jeppe@barris.dk
+    Tell us a little about yourself. ☛
+    ? Name: Jeppe Bårris
+    ? Email: jeppe@barris.dk
 
-Wire tools and preprocessors. ☛
-? CSS preprocessor: Sass
-? Use Autoprefixer? Yes
-? Javascript preprocessor: Coffeescript
+    Wire tools and preprocessors. ☛
+    ? CSS preprocessor: Sass
+    ? Use Autoprefixer? Yes
+    ? Javascript preprocessor: Coffeescript
 
-Set up some directories. ☛
-See note about nested directories in the README.
-? CSS directory: css
-? Javascript directory: js
-? Image directory: img
-? Webfont directory: fonts
-? CSS preprocessor directory: _scss
-? Javascript preprocessor directory: _src
+    Set up some directories. ☛
+    See note about nested directories in the README.
+    ? CSS directory: css
+    ? Javascript directory: js
+    ? Image directory: img
+    ? Webfont directory: fonts
+    ? CSS preprocessor directory: _scss
+    ? Javascript preprocessor directory: _src
 
-Choose a template. ☛
-? Site template: HTML5 ★ Boilerplate
-? Add H5★BP CSS files? Yes
-? Add H5★BP javascript files? Yes
-? Add H5★BP favorite and touch icons? Yes
-? Add H5★BP documentation? Yes
-? Include Google Analytics? Yes
+    Choose a template. ☛
+    ? Site template: HTML5 ★ Boilerplate
+    ? Add H5★BP CSS files? Yes
+    ? Add H5★BP javascript files? Yes
+    ? Add H5★BP favorite and touch icons? Yes
+    ? Add H5★BP documentation? Yes
+    ? Include Google Analytics? Yes
 
-Choose deployment options. ☛
-? Use grunt-build-control for deployment? Yes
-? Remote to deploy to: ../
-? Branch to deploy to: gh-pages
+    Choose deployment options. ☛
+    ? Use grunt-build-control for deployment? Yes
+    ? Remote to deploy to: ../
+    ? Branch to deploy to: gh-pages
 
-And finally, configure Jekyll. ☛
-You can change all of these options in _config.yml.
-? Site description: 
-? Post permalink style: pretty
-? Markdown library: kramdown
-? Use the Pygments code highlighting library? No
-? Number of posts to show on the home page: all
-New jekyll site installed in /Users/jeppe/apps/mdd/mdd_yo_jekyll/.jekyll. 
-   create bower.json
-   create package.json
-   create .gitignore
-   create .gitattributes
-   create Gruntfile.js
-   create .bowerrc
-   create Gemfile
-   create .jshintrc
-   create .csslintrc
-   create .editorconfig
-   create _config.build.yml
-   create _config.yml
-   create app/_posts/2015-12-08-welcome-to-jekyll.md
-   create app/_posts/2015-12-08-yo-jekyllrb.md
-   create app/index.html
-   create app/_layouts/post.html
-   create app/_includes/scripts.html
-   create app/_layouts/default.html
-   create app/_includes/googleanalytics.html
-   create app/.htaccess
-   create app/404.html
-   create app/crossdomain.xml
-   create app/_h5bp-docs/LICENSE.md
-   create app/robots.txt
-   create app/humans.txt
-   create app/css/main.css
-   create app/js/main.js
-   create app/js/plugins.js
-   create app/apple-touch-icon-precomposed.png
-   create app/favicon.ico
-   create app/_h5bp-docs/code-docs/crossdomain.md
-   create app/_h5bp-docs/code-docs/css.md
-   create app/_h5bp-docs/code-docs/extend.md
-   create app/_h5bp-docs/code-docs/faq.md
-   create app/_h5bp-docs/code-docs/html.md
-   create app/_h5bp-docs/code-docs/js.md
-   create app/_h5bp-docs/code-docs/misc.md
-   create app/_h5bp-docs/code-docs/TOC.md
-   create app/_h5bp-docs/code-docs/usage.md
-   create app/_h5bp-docs/CHANGELOG.md
-   create app/_h5bp-docs/CONTRIBUTING.md
-   create app/_h5bp-docs/README.md
-   create app/_scss/readme.md
-   create app/_src/readme.md
+    And finally, configure Jekyll. ☛
+    You can change all of these options in _config.yml.
+    ? Site description: 
+    ? Post permalink style: pretty
+    ? Markdown library: kramdown
+    ? Use the Pygments code highlighting library? No
+    ? Number of posts to show on the home page: all
+    New jekyll site installed in /Users/jeppe/apps/mdd/mdd_yo_jekyll/.jekyll. 
+       create bower.json
+       create package.json
+       create .gitignore
+       create .gitattributes
+       create Gruntfile.js
+       create .bowerrc
+       create Gemfile
+       create .jshintrc
+       create .csslintrc
+       create .editorconfig
+       create _config.build.yml
+       create _config.yml
+       create app/_posts/2015-12-08-welcome-to-jekyll.md
+       create app/_posts/2015-12-08-yo-jekyllrb.md
+       create app/index.html
+       create app/_layouts/post.html
+       create app/_includes/scripts.html
+       create app/_layouts/default.html
+       create app/_includes/googleanalytics.html
+       create app/.htaccess
+       create app/404.html
+       create app/crossdomain.xml
+       create app/_h5bp-docs/LICENSE.md
+       create app/robots.txt
+       create app/humans.txt
+       create app/css/main.css
+       create app/js/main.js
+       create app/js/plugins.js
+       create app/apple-touch-icon-precomposed.png
+       create app/favicon.ico
+       create app/_h5bp-docs/code-docs/crossdomain.md
+       create app/_h5bp-docs/code-docs/css.md
+       create app/_h5bp-docs/code-docs/extend.md
+       create app/_h5bp-docs/code-docs/faq.md
+       create app/_h5bp-docs/code-docs/html.md
+       create app/_h5bp-docs/code-docs/js.md
+       create app/_h5bp-docs/code-docs/misc.md
+       create app/_h5bp-docs/code-docs/TOC.md
+       create app/_h5bp-docs/code-docs/usage.md
+       create app/_h5bp-docs/CHANGELOG.md
+       create app/_h5bp-docs/CONTRIBUTING.md
+       create app/_h5bp-docs/README.md
+       create app/_scss/readme.md
+       create app/_src/readme.md
 
 
-I'm all done. Running npm install & bower install for you to install the required dependencies. If this fails, try running the command yourself.
+    I'm all done. Running npm install & bower install for you to install the required dependencies. If this fails, try running the command yourself.
 ```
 
 
-
+### $ sudo npm install
 ```
 $ sudo npm install
 Password:
@@ -320,6 +323,12 @@ grunt-contrib-imagemin@0.8.1 node_modules/grunt-contrib-imagemin
 
 grunt-browser-sync@1.3.7 node_modules/grunt-browser-sync
 └── browser-sync@1.3.7 (emitter-steward@0.0.1, foxy@0.2.1, commander@2.3.0, opn@1.0.2, minimist@1.2.0, cl-strings@0.0.5, ua-parser-js@0.7.9, connect@3.1.1, browser-sync-client@0.3.1, serve-static@1.10.0, opt-merger@0.1.3, portscanner-plus@0.1.0, http-proxy@1.3.0, serve-index@1.7.2, glob-watcher@0.0.6, lodash@2.4.2, dev-ip@0.1.7, localtunnel@1.8.0, resp-modifier@0.1.2, socket.io@1.0.6)
+```
+
+
+### $ bower install
+
+```
 $ bower install
 bower cached        git://github.com/necolas/normalize.css.git#3.0.3
 bower validate      3.0.3 against git://github.com/necolas/normalize.css.git#~3.0.1
@@ -336,6 +345,11 @@ normalize-css#3.0.3 app/_bower_components/normalize-css
 modernizr#2.8.3 app/_bower_components/modernizr
 
 jquery#1.11.3 app/_bower_components/jquery
+```
+
+### $ grunt serve
+
+```
 $ grunt serve
 Running "serve" task
 
@@ -403,6 +417,7 @@ Execution Time (2015-12-08 20:13:41 UTC)
 loading tasks      2.4s  ▇▇▇▇▇▇▇▇▇▇▇▇ 27%
 concurrent:server  6.3s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 72%
 Total 8.7s
+```
 
 $ subl .
 $ grunt serve
@@ -692,7 +707,13 @@ concurrent:server    8.2s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇�
 autoprefixer:dist   176ms  ▇▇▇ 2%
 browserSync:server  346ms  ▇▇▇▇▇▇ 3%
 Total 10.4s
+```
 
+
+
+### $ sudo npm install grunt-browser-sync --save-dev
+
+```
 $ sudo npm install grunt-browser-sync --save-dev
 Password:
  
@@ -731,6 +752,11 @@ npm WARN package.json node-pre-gyp@0.6.15 No README data
 [fsevents] Success: "/Users/jeppe/apps/mdd/mdd_yo_jekyll/node_modules/grunt-browser-sync/node_modules/browser-sync/node_modules/chokidar/node_modules/fsevents/lib/binding/Release/node-v14-darwin-x64/fse.node" is installed via remote
 grunt-browser-sync@2.2.0 node_modules/grunt-browser-sync
 └── browser-sync@2.10.0 (ucfirst@1.0.0, async-each-series@0.1.1, longest@1.0.1, emitter-steward@1.0.0, easy-extender@2.3.2, dev-ip@1.0.1, query-string@2.4.2, opn@3.0.3, browser-sync-client@2.4.1, ua-parser-js@0.7.9, portscanner@1.0.0, serve-static@1.10.0, connect@3.4.0, meow@3.3.0, immutable@3.7.5, resp-modifier@5.0.2, foxy@11.1.4, eazy-logger@2.1.2, bs-recipes@1.0.5, serve-index@1.7.2, fs-extra@0.26.2, anymatch@1.3.0, localtunnel@1.8.0, lodash@3.10.1, browser-sync-ui@0.5.16, socket.io@1.3.7, chokidar@1.4.0)
+```
+
+### $ grunt serve
+
+```
 $ grunt serve
 Running "serve" task
 
@@ -807,13 +833,14 @@ Running "browserSync:server" (browserSync) task
 
 Running "watch" task
 Waiting...
-^C
 
-Execution Time (2015-12-08 20:25:49 UTC)
-concurrent:server       9.2s  ▇▇ 1%
-watch              13m 39.8s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 98%
-Total 13m 52.7s
+```
 
+
+
+### $ grunt deploy
+
+```
 $ grunt deploy
 Running "clean:server" (clean) task
 >> 2 paths cleaned.
@@ -855,7 +882,14 @@ loading tasks     3s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇�
 jekyll:check    3.3s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 50%
 jshint:all     212ms  ▇▇▇▇▇▇ 3%
 Total 6.6s
+```
 
+
+
+
+### $ grunt deploy
+
+```
 $ grunt deploy
 Running "clean:server" (clean) task
 >> 0 paths cleaned.
@@ -1080,6 +1114,9 @@ uglify:generated   422ms  ▇▇▇▇▇ 3%
 buildcontrol:dist  324ms  ▇▇▇▇ 2%
 Total 15.6s
 
+### $ grunt deploy
+
+```
 $ grunt deploy
 Running "clean:server" (clean) task
 >> 1 path cleaned.
@@ -1325,7 +1362,11 @@ autoprefixer:dist  234ms  ▇▇ 1%
 uglify:generated   453ms  ▇▇▇▇ 2%
 buildcontrol:dist   4.2s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 22%
 Total 19.4s
+```
 
+### $ grunt deploy
+
+```
 $ grunt deploy
 Running "clean:server" (clean) task
 >> 1 path cleaned.
@@ -1549,7 +1590,10 @@ autoprefixer:dist  213ms  ▇▇▇ 1%
 uglify:generated   422ms  ▇▇▇▇▇ 3%
 buildcontrol:dist  355ms  ▇▇▇▇ 2%
 Total 15.9s
+```
 
+### $ grunt deploy
+```
 $ grunt deploy
 Running "clean:server" (clean) task
 >> 1 path cleaned.
@@ -1775,7 +1819,11 @@ concurrent:dist     4.7s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
 uglify:generated   412ms  ▇▇▇ 2%
 buildcontrol:dist   8.9s  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 39%
 Total 23s
+```
 
+### $ grunt serve
+
+```
 $ grunt serve
 Running "serve" task
 
