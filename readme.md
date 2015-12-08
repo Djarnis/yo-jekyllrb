@@ -117,7 +117,7 @@ Main fixes:
 ```
 
 
-### $ sudo npm install
+### $ sudo npm install [SUCCESS]
 
 ```
     $ sudo npm install
@@ -327,7 +327,7 @@ Main fixes:
 ```
 
 
-### $ bower install
+### $ bower install [SUCCESS]
 
 ```
     $ bower install
@@ -348,7 +348,7 @@ Main fixes:
     jquery#1.11.3 app/_bower_components/jquery
 ```
 
-### $ grunt serve
+### $ grunt serve [FAILS][JEKYLL_VERSION_ERROR]
 
 ```
     $ grunt serve
@@ -425,7 +425,7 @@ Main fixes:
 
     $ subl .
 
-### $ grunt serve
+### $ grunt serve [FAILS][JEKYLL_VERSION_ERROR]
 
 ```
     $ grunt serve
@@ -503,7 +503,7 @@ Main fixes:
 ```
 
 
-### $ git init
+### $ git init [SUCCESS]
 
 ```
     $ git init
@@ -568,7 +568,7 @@ Main fixes:
     Branch master set up to track remote branch master from origin.
 ```
 
-### $ grunt serve
+### $ grunt serve [FAILS][JEKYLL_VERSION_ERROR]
 
 ```
     $ grunt serve
@@ -662,7 +662,7 @@ Main fixes:
 ```
 
 
-### $ grunt serve
+### $ grunt serve [FAILS][browserSync_version_error]
 
 ```
     $ grunt serve
