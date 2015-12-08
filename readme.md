@@ -1,14 +1,47 @@
 # yo jekyllrb that works
 
-A bare `yo jekyllrb` generated app, with small fixes that fixes my current installation.
+A bare `yo jekyllrb` generated app, patched to work in my current enviroment.
 
-Main fixes:
+**Fixes**:
+
 * `Gemfile`: Set each gem on its own line + update `jekyll` to version `2.5.3`.
-* Update browsersync: `$ sudo npm install grunt-browser-sync --save-dev`
-* `Gruntfile.js`: Replace double quotes to single to make build pass
+* `package.json`: Update browsersync: `$ sudo npm install grunt-browser-sync --save-dev`
+* `Gruntfile.js`: Replace double quotes with single to make build pass
+* `.editorconfig`: Set default indentation to 4, and add 2 for coffee
 
 
-## Install log
+## Usage
+
+ Clone this repo
+ 
+    $ git clone https://github.com/Djarnis/yo-jekyllrb
+
+Rename to whatever your project's called ...
+    
+    $ mv yo-jekyllrb __my_awesome_project__
+
+`cd` into your awesome project
+
+    $ cd __my_awesome_project__
+
+Install dependencies
+
+    $ sudo npm install
+
+Install frontend dependencies
+
+    $ bower install
+
+Run developer server
+
+    $ grunt serve
+
+
+
+
+## Installation log
+
+I'll keep this around to see what I changed and why :)
 
 ### $ yo jekyllrb
 
@@ -658,7 +691,6 @@ Main fixes:
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.3.0)
     jekyll-watch (1.2.1)
-
 ```
 
 
@@ -1222,5 +1254,4 @@ Main fixes:
 
     Running "watch" task
     Waiting...
-
 ```
