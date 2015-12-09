@@ -1,6 +1,19 @@
-# yo jekyllrb that works
+yo jekyllrb [that works]
+===
 
 A bare `yo jekyllrb` generated app, patched to work in my current enviroment.
+
+Precompiled with 
+
+* Sass 
+* Autoprefixer 
+* Coffeescript 
+* default directory structure (css/js/img/fonts/_scss/_src) 
+* HTML5 ★ Boilerplate incl. css + js + icon files, analytics and documentation
+* grunt-build-control
+* Post permalink style: pretty
+* Markdown library: kramdown
+
 
 **Fixes**:
 
