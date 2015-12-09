@@ -3,8 +3,8 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: mdd_yo_jekyll
-description: 
+name: yo_jekyllrb
+description:
 author:
   name: Jeppe Bårris
   email: jeppe@barris.dk
